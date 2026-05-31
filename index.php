@@ -113,3 +113,25 @@ include __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
+
+<!-- SERVICIOS -->
+<section class="section" style="padding-top:0">
+    <div class="section-header">
+        <span class="section-tag">Nuestros servicios</span>
+        <h2>Lo mejor para tu compañero</h2>
+    </div>
+    <div class="services-grid">
+        <?php foreach ($servicios as $i => $s): ?>
+        <div class="service-card">
+            <div class="service-icon"><?= $icons[$i % count($icons)] ?></div>
+            <h3><?= htmlspecialchars($s['nombre']) ?></h3>
+            <p><?= htmlspecialchars($s['descripcion']) ?></p>
+            <span class="service-price">S/ <?= number_format($s['precio'], 2) ?></span>
+        </div>
+        <?php endforeach; ?>
+    </div>
+    <div class="text-center mt-3">
+        <a href="/soulspet/servicios.php" class="btn btn-outline">Ver todos los servicios</a>
+    </div>
+</section>
+
