@@ -42,3 +42,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = 'Por favor completa todos los campos.';
     }
 }
+
+$pageTitle = 'Iniciar Sesión';
+include __DIR__ . '/includes/header.php';
+?>
+
+<div class="form-page">
+    <div class="form-card">
+        <h2>Bienvenido de vuelta</h2>
+        <p class="subtitle">Inicia sesión para gestionar tus reservas.</p>
+
+        <?php if ($error): ?>
+            <div class="flash flash-error" style="margin-bottom:1.25rem;"><?= htmlspecialchars($error) ?></div>
+        <?php endif; ?>
