@@ -55,3 +55,27 @@ include __DIR__ . '/includes/header.php';
         <?php if ($error): ?>
             <div class="flash flash-error" style="margin-bottom:1.25rem;"><?= htmlspecialchars($error) ?></div>
         <?php endif; ?>
+
+        <form method="POST" data-validate>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email"
+                       value="<?= htmlspecialchars($_POST['email'] ?? '') ?>"
+                       placeholder="tu@correo.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password"
+                       placeholder="••••••••" required autocomplete="current-password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Iniciar Sesión</button>
+        </form>
+
+        <div class="form-footer">
+            ¿No tienes cuenta? <a href="/soulspet/registro.php">Regístrate gratis</a>
+        </div>
+    </div>
+</div>
+
+<?php include __DIR__ . '/includes/footer.php'; ?>
+
