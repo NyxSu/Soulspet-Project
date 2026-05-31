@@ -135,3 +135,13 @@ include __DIR__ . '/includes/header.php';
     </div>
 </section>
 
+<!-- CTA -->
+<section style="background:var(--color-bg2); border-top:1px solid var(--color-border); border-bottom:1px solid var(--color-border);">
+    <div class="section" style="text-align:center;">
+        <h2>¿Listo para consentir a tu mascota?</h2>
+        <p class="text-muted" style="margin:.75rem 0 2rem;">Crea tu cuenta gratis y reserva tu primera cita hoy.</p>
+        <a href="/soulspet/registro.php" class="btn btn-primary">Comenzar ahora</a>
+    </div>
+</section>
+
+<?php include __DIR__ . '/includes/footer.php'; ?>
