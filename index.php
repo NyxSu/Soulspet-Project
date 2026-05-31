@@ -91,3 +91,25 @@ include __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
+
+<!-- BANNER VISUAL PERROS Y GATOS -->
+<section class="pets-banner">
+    <div class="pets-banner-inner">
+        <div class="pets-banner-card dogs">
+            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=700&q=80&auto=format&fit=crop" alt="Perros felices">
+            <div class="pets-banner-text">
+                <span class="pets-banner-emoji">🐶</span>
+                <h3>Especialistas en perros</h3>
+                <p>Baño, corte, secado y más para todas las razas.</p>
+            </div>
+        </div>
+        <div class="pets-banner-card cats">
+            <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=700&q=80&auto=format&fit=crop" alt="Gatos elegantes">
+            <div class="pets-banner-text">
+                <span class="pets-banner-emoji">🐱</span>
+                <h3>Expertos en gatos</h3>
+                <p>Cuidado delicado y especializado para tu felino.</p>
+            </div>
+        </div>
+    </div>
+</section>
