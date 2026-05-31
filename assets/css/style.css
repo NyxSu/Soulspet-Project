@@ -1,0 +1,22 @@
+/* ============================================================
+   SoulsPets - Estilos principales
+   Paleta: Negro, gris carbón, dorado cálido, blanco hueso
+   Tipografía: Playfair Display (títulos) + DM Sans (cuerpo)
+   ============================================================ */
+
+/* ---------- Variables ---------- */
+:root {
+    --color-bg:        #0f0f0f;
+    --color-bg2:       #181818;
+    --color-bg3:       #222222;
+    --color-surface:   #1e1e1e;
+    --color-border:    #2e2e2e;
+    --color-gold:      #c8a96e;
+    --color-gold-light:#e2c98a;
+    --color-text:      #e8e4de;
+    --color-muted:     #888880;
+    --color-white:     #f5f0e8;
+    --color-danger:    #c0392b;
+    --color-success:   #27ae60;
+    --color-warning:   #e67e22;
+    --color-info:      #2980b9;
