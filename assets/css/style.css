@@ -20,3 +20,18 @@
     --color-success:   #27ae60;
     --color-warning:   #e67e22;
     --color-info:      #2980b9;
+
+     --font-display: 'Playfair Display', Georgia, serif;
+    --font-body:    'DM Sans', system-ui, sans-serif;
+
+    --radius-sm:  6px;
+    --radius-md:  12px;
+    --radius-lg:  20px;
+
+    --shadow-sm: 0 2px 8px rgba(0,0,0,.4);
+    --shadow-md: 0 6px 24px rgba(0,0,0,.5);
+    --shadow-lg: 0 16px 48px rgba(0,0,0,.6);
+
+    --transition: .25s ease;
+    --header-h: 72px;
+}
