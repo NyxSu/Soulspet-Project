@@ -60,3 +60,30 @@ $ultimas = $db->query(
         </div>
     </div>
 </div>
+
+<!-- Stats -->
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="stat-number" data-count="<?= $totalUsuarios ?>"><?= $totalUsuarios ?></div>
+        <div class="stat-label">👥 Clientes registrados</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number" data-count="<?= $reservasHoy ?>"><?= $reservasHoy ?></div>
+        <div class="stat-label">📅 Reservas hoy</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number" data-count="<?= $reservasTotal ?>"><?= $reservasTotal ?></div>
+        <div class="stat-label">📋 Reservas totales</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number" data-count="<?= $reservasPend ?>"><?= $reservasPend ?></div>
+        <div class="stat-label">⏳ Pendientes</div>
+    </div>
+</div>
+
+<!-- Últimas reservas -->
+<div style="background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);overflow:hidden;">
+    <div style="padding:1.25rem 1.5rem;border-bottom:1px solid var(--color-border);display:flex;justify-content:space-between;align-items:center;">
+        <h3 style="font-size:1rem;">Últimas reservas</h3>
+        <a href="/soulspet/admin/reservas.php" class="btn btn-outline btn-sm">Ver todas</a>
+    </div>
