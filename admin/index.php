@@ -87,3 +87,47 @@ $ultimas = $db->query(
         <h3 style="font-size:1rem;">Últimas reservas</h3>
         <a href="/soulspet/admin/reservas.php" class="btn btn-outline btn-sm">Ver todas</a>
     </div>
+
+      <?php if (empty($ultimas)): ?>
+        <div class="empty-state"><p>No hay reservas aún.</p></div>
+    <?php else: ?>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Cliente</th>
+                    <th>Mascota</th>
+                    <th>Servicio</th>
+                    <th>Fecha</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($ultimas as $r): ?>
+                <tr>
+                    <td class="text-muted" style="font-size:.82rem;">#<?= $r['id'] ?></td>
+                    <td><?= htmlspecialchars($r['cliente']) ?></td>
+                    <td>
+                        <span class="pet-tag">
+                            <?= $r['tipo'] === 'perro' ? '🐶' : '🐱' ?>
+                            <?= htmlspecialchars($r['nombre_mascota']) ?>
+                        </span>
+                    </td>
+                    <td><?= htmlspecialchars($r['servicio']) ?></td>
+                    <td><?= date('d/m/Y', strtotime($r['fecha'])) ?> <?= date('h:i A', strtotime($r['hora'])) ?></td>
+                    <td><span class="badge badge-<?= $r['estado'] ?>"><?= ucfirst($r['estado']) ?></span></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+    <?php endif; ?>
+</div>
+
+</main>
+<script src="/soulspet/assets/js/script.js"></script>
+</body>
+</html>
+
+
